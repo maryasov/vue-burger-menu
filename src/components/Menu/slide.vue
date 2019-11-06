@@ -2,6 +2,9 @@
     <div>
         <Menu v-bind="this.$attrs" @openMenu="openMenu" @closeMenu="closeMenu">
             <slot></slot>
+            <template v-slot:icon>
+                <slot name="icon"></slot>
+            </template>
         </Menu>
     </div>
 </template>

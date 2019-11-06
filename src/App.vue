@@ -1,5 +1,6 @@
 <template>
     <div id="app">
+<!--
         <component :is="currentMenu" :right="side === 'right' ? true: false">
             <a href="#">
                 <i class="fa fa-fw fa-star-o"></i>
@@ -26,6 +27,7 @@
                 <span>Reading</span>
             </a>
         </component>
+-->
         <main id="page-wrap">
             <img src="https://img.shields.io/npm/dt/vue-burger-menu.svg" /> &emsp;
             <img src="https://img.shields.io/github/stars/mbj36/vue-burger-menu.svg" />
@@ -46,6 +48,19 @@
                     </span>
                 </span>
             </nav>
+
+
+            <slide>
+                <template v-slot:icon>
+                    <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="20" height="2" fill="black"/>
+                        <rect y="7" width="20" height="2" fill="black"/>
+                        <rect y="14" width="20" height="2" fill="black"/>
+                    </svg>
+                </template>
+
+            </slide>
+
             Inspired by
             <a href="https://github.com/codrops/OffCanvasMenuEffects">Off-Canvas Menu Effects</a> and
             <a href="https://github.com/codrops/SidebarTransitions">Sidebar Transitions</a> by Codrops
